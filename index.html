@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script type="text/javascript" src="data/config.js"></script>
+<link rel="stylesheet" type="text/css" href="static/css/ui.css">
+<script type="text/javascript" src="static/js/lib/animate.js"></script>
+<body>
+<script type="text/javascript" src="static/js/main/reset.js"></script>
+<div id="ui">
+	<label class="left" onclick="animateSelect()">有动画点名</label>
+	<label class="left m-l-20" onclick="immediateSelect()">无动画点名</label>
+	<label class="left m-l-20" onclick="setSingle(this)">设为唯一模式</label>
+	<p id="result"></p>
+	<select class="right" id="skin" onchange="changeSkin(this.value)">
+		<option selected value="1">默认皮肤</option>
+		<option value="2">小熊</option>
+		<option value="3">非主流</option>
+		<option value="4">玫瑰花</option>
+		<option value="5">炫紫</option>
+	</select>
+	<input class="right m-r-10" type="text" id="pattern" disabled>
+	<input class="right m-r-10" type="text" id="members" disabled>
+	<input class="right m-r-10" type="text" name="" id="intervals" onchange="changeIntervals(this.value);" placeholder="帧频">
+	<input class="right m-r-10" type="text" name="" id="time" onchange="changeTime(this.value);" placeholder="时间">
+	<input class="right m-r-10" type="text" name="" id="speed" onchange="changeSpeed(this.value);" placeholder="速度">
+	<input class="right m-r-10" type="text" name="" id="fonts" onchange="changeFonts(this.value);" placeholder="字号 ">
+</div>
+<div id="main">
+	<div id="container"></div>
+	<div id="shadow"></div>
+</div>
+</body>
+<script type="text/javascript" src="static/js/main/main.js"></script>
+</html>
